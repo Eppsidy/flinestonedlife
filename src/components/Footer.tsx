@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center">
                 <span className="mr-2">📞</span>
-                <span>1-800-BEDROCK</span>
+                <span>BEDROCK</span>
               </div>
               <div className="flex items-center">
                 <span className="mr-2">📧</span>
