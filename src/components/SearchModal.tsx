@@ -36,10 +36,10 @@ const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-start justify-center pt-20">
-      <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full mx-4 border-4 border-orange-600">
+      <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full mx-4 border-4 border-stone-600">
         <div className="p-6">
           <div className="flex items-center justify-between mb-6">
-            <h3 className="text-2xl font-bold text-stone-800">🔍 Search Bedrock Store</h3>
+            <h3 className="text-2xl font-bold text-stone-800">🔍 Search Flintstone Store</h3>
             <button 
               onClick={onClose}
               className="text-stone-600 hover:text-stone-800 p-2"
@@ -54,7 +54,7 @@ const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
               placeholder="Search for Stone Age products..."
               value={searchTerm}
               onChange={(e) => handleSearch(e.target.value)}
-              className="w-full px-4 py-3 border-2 border-stone-300 rounded-full focus:border-orange-500 focus:outline-none text-lg"
+              className="w-full px-4 py-3 border-2 border-stone-300 rounded-full focus:border-stone-600 focus:outline-none text-lg"
               autoFocus
             />
             <Search className="absolute right-4 top-1/2 transform -translate-y-1/2 text-stone-400" size={20} />

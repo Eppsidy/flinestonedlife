@@ -16,29 +16,29 @@ const TestimonialSlider: React.FC = () => {
     {
       id: 1,
       name: "Fred Flintstone",
-      text: "Yabba Dabba Doo! Best shopping experience in all of Bedrock! My wife Wilma loves everything we bought here.",
-      location: "Bedrock, Stone County",
+      text: "Shit Slaps.",
+      location: "Vaal",
       rating: 5
     },
     {
       id: 2,
       name: "Barney Rubble",
-      text: "Hey Fred, these guys rock! Got my new club here and it's the best I've ever swung. Highly recommend!",
-      location: "Bedrock Heights",
+      text: "Never been that high",
+      location: "Vaal",
       rating: 5
     },
     {
       id: 3,
       name: "Wilma Flintstone",
-      text: "The cave painting kit is absolutely wonderful! My artistic side has never been happier. Fast delivery too!",
-      location: "Bedrock, Stone County",
+      text: "Yoh",
+      location: "Vaal",
       rating: 5
     },
     {
       id: 4,
       name: "Betty Rubble",
-      text: "Love the prehistoric fashion collection! Finally found clothes that fit my Stone Age lifestyle perfectly.",
-      location: "Bedrock Heights",
+      text: "Di gatta tsa quality",
+      location: "Vaal",
       rating: 5
     }
   ];
@@ -67,14 +67,19 @@ const TestimonialSlider: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-stone-200 to-amber-100">
+    <section
+  className="py-20 bg-cover bg-center"
+  style={{
+    backgroundImage: `url("/assets/testbg.jpeg")`
+  }}
+> 
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-black text-stone-800 mb-6">
-            🗣️ WHAT BEDROCK SAYS 🗣️
+          <h2 className="text-5xl md:text-6xl font-black text-white mb-6">
+             Flinstoner Reviews 
           </h2>
-          <p className="text-xl text-stone-600 max-w-2xl mx-auto">
-            Hear from our satisfied Stone Age customers across Bedrock!
+          <p className="text-xl text-white max-w-2xl mx-auto">
+            Hear from our satisfied Stone Age customers across Flintstoned!
           </p>
         </div>
 
@@ -98,7 +103,7 @@ const TestimonialSlider: React.FC = () => {
 
               {/* Customer Info */}
               <div className="mb-8">
-                <h4 className="text-xl font-bold text-orange-600 mb-2">
+                <h4 className="text-xl font-bold text-black mb-2">
                   {testimonials[currentTestimonial].name}
                 </h4>
                 <p className="text-stone-600">
@@ -110,7 +115,7 @@ const TestimonialSlider: React.FC = () => {
               <div className="flex justify-center items-center space-x-6">
                 <button 
                   onClick={prevTestimonial}
-                  className="bg-orange-600 hover:bg-orange-700 text-white p-3 rounded-full shadow-lg transform hover:scale-110 transition-all duration-300"
+                  className="bg-black hover:bg-stone-700 text-white p-3 rounded-full shadow-lg transform hover:scale-110 transition-all duration-300"
                 >
                   ⬅️
                 </button>
@@ -122,7 +127,7 @@ const TestimonialSlider: React.FC = () => {
                       key={index}
                       onClick={() => setCurrentTestimonial(index)}
                       className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                        index === currentTestimonial ? 'bg-orange-600 scale-125' : 'bg-stone-400'
+                        index === currentTestimonial ? 'bg-black scale-125' : 'bg-stone-400'
                       }`}
                     />
                   ))}
@@ -130,7 +135,7 @@ const TestimonialSlider: React.FC = () => {
 
                 <button 
                   onClick={nextTestimonial}
-                  className="bg-orange-600 hover:bg-orange-700 text-white p-3 rounded-full shadow-lg transform hover:scale-110 transition-all duration-300"
+                  className="bg-black hover:bg-stone-700 text-white p-3 rounded-full shadow-lg transform hover:scale-110 transition-all duration-300"
                 >
                   ➡️
                 </button>
@@ -142,7 +147,7 @@ const TestimonialSlider: React.FC = () => {
         {/* Trust Badge */}
         <div className="text-center mt-12">
           <div className="inline-block bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-4 rounded-full shadow-xl border-4 border-yellow-400">
-            <span className="text-lg font-bold">🏆 Over 10,000 Happy Cavemen! 🏆</span>
+            <span className="text-lg font-bold">🏆 A lot of Happy Cavemen! 🏆</span>
           </div>
         </div>
       </div>
