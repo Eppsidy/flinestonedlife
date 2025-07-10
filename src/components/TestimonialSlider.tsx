@@ -86,7 +86,7 @@ const TestimonialSlider: React.FC = () => {
 
         <div className="max-w-4xl mx-auto">
           <SpotlightCard 
-            className="bg-white shadow-2xl border-4 border-stone-400"
+            className="bg-black shadow-2xl border-4 border-stone-400"
             spotlightColor="rgba(34, 197, 94, 0.3)"
           >
             {/* Stone texture background */}
