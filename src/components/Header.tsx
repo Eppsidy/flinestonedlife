@@ -92,10 +92,10 @@ const Header: React.FC<HeaderProps> = ({ cartCount, onCartToggle, onSearch }) =>
             </button>
           </nav>
 
-          {/* Stone Tools (Search and Cart) */}
+          {/* Stone Tools (Search and Cart) 
           <div className="flex items-center space-x-4">
             <SearchBar onSearch={onSearch} />
-            
+            */}
             <button 
               onClick={onCartToggle}
               className="text-white p-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 relative border-4 border-stone-600"
@@ -115,7 +115,7 @@ const Header: React.FC<HeaderProps> = ({ cartCount, onCartToggle, onSearch }) =>
                   {cartCount}
                 </span>
               )}
-            </button>
+            </button> 
 
             {/* Mobile Stone Menu Button */}
             <button 
@@ -173,7 +173,7 @@ const Header: React.FC<HeaderProps> = ({ cartCount, onCartToggle, onSearch }) =>
             </nav>
           </div>
         )}
-      </div>
+      
     </header>
   );
 };

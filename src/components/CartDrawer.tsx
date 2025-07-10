@@ -196,7 +196,7 @@ const CartDrawer: React.FC<CartDrawerProps> = ({
                 className="text-2xl font-black text-black"
                 style={{ fontFamily: 'Creepster, cursive' }}
               >
-                ${total.toFixed(2)} 
+                R{total.toFixed(2)} 
               </span>
             </div>
             <button

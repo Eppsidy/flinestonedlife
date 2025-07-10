@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import SpotlightCard from './ui/spotlight-card';
 
 interface Testimonial {
   id: number;
@@ -84,7 +85,10 @@ const TestimonialSlider: React.FC = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12 border-4 border-stone-400 relative overflow-hidden">
+          <SpotlightCard 
+            className="bg-white shadow-2xl border-4 border-stone-400"
+            spotlightColor="rgba(34, 197, 94, 0.3)"
+          >
             {/* Stone texture background */}
             <div className="absolute inset-0 opacity-5" style={{
               backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23000' points='36,1 14,1 6,14 6,27 14,40 36,40 44,27 44,14'/%3E%3C/g%3E%3C/svg%3E")`
@@ -97,16 +101,16 @@ const TestimonialSlider: React.FC = () => {
               </div>
 
               {/* Testimonial Text */}
-              <blockquote className="text-2xl md:text-3xl text-stone-700 font-semibold mb-8 leading-relaxed animate-fade-in">
+              <blockquote className="text-2xl md:text-3xl text-white font-semibold mb-8 leading-relaxed animate-fade-in">
                 "{testimonials[currentTestimonial].text}"
               </blockquote>
 
               {/* Customer Info */}
               <div className="mb-8">
-                <h4 className="text-xl font-bold text-black mb-2">
+                <h4 className="text-xl font-bold text-green-200 mb-2">
                   {testimonials[currentTestimonial].name}
                 </h4>
-                <p className="text-stone-600">
+                <p className="text-white">
                   {testimonials[currentTestimonial].location}
                 </p>
               </div>
@@ -115,7 +119,7 @@ const TestimonialSlider: React.FC = () => {
               <div className="flex justify-center items-center space-x-6">
                 <button 
                   onClick={prevTestimonial}
-                  className="bg-black hover:bg-stone-700 text-white p-3 rounded-full shadow-lg transform hover:scale-110 transition-all duration-300"
+                  className="bg-white hover:bg-stone-700 text-white p-3 rounded-full shadow-lg transform hover:scale-110 transition-all duration-300"
                 >
                   ⬅️
                 </button>
@@ -141,7 +145,7 @@ const TestimonialSlider: React.FC = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </SpotlightCard>
         </div>
 
         {/* Trust Badge */}

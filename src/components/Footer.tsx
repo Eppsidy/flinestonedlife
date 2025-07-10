@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gradient-to-b from-stone-800 to-stone-900 text-white py-16">
       <div className="container mx-auto px-4">
-        {/* Newsletter Signup */}
+        {/* Newsletter Signup 
         <div className="bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl p-8 mb-12 text-center shadow-2xl border-4 border-yellow-400">
           <h3 className="text-3xl font-bold mb-4">📜 Join Our Stone-Age Newsletter! 📜</h3>
           <p className="text-xl mb-6">Get the latest deals delivered by pterodactyl mail!</p>
@@ -20,14 +20,15 @@ const Footer: React.FC = () => {
             </button>
           </div>
         </div>
+        */}
 
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold text-yellow-300 mb-4">🗿 FLINTSTONED LIFE</h3>
+            <h3 className="text-2xl font-bold text-yellow-300 mb-4"> FLINTSTONED LIFE</h3>
             <p className="text-stone-300 mb-4 leading-relaxed">
-              Bedrock's premier marketplace for all your Stone Age needs. From prehistoric tech to cave fashion!
+              Flintstoned premier marketplace for all your Stone Age needs. From prehistoric tech to cave fashion!
             </p>
             <div className="flex space-x-4">
               <div className="text-2xl hover:scale-110 transition-transform cursor-pointer">📱</div>
@@ -66,11 +67,11 @@ const Footer: React.FC = () => {
             <div className="space-y-3 text-stone-300">
               <div className="flex items-center">
                 <span className="mr-2">🏠</span>
-                <span>123 Bedrock Ave, Stone County</span>
+                <span>123 Ave, Stone County</span>
               </div>
               <div className="flex items-center">
                 <span className="mr-2">📞</span>
-                <span>BEDROCK</span>
+                <span>Flintstone</span>
               </div>
               <div className="flex items-center">
                 <span className="mr-2">📧</span>
@@ -88,7 +89,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-stone-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-stone-400 text-center md:text-left mb-4 md:mb-0">
-              © 2024 Flintstoned Life. All rights reserved in the Stone Age.
+              © 2025 Eppsidy. All rights reserved in the Stone Age.
             </p>
             <div className="flex space-x-6 text-stone-400">
               <a href="#privacy" className="hover:text-yellow-300 transition-colors">Privacy Policy</a>
@@ -101,9 +102,9 @@ const Footer: React.FC = () => {
         {/* Fun Element */}
         <div className="text-center mt-8">
           <div className="inline-block animate-bounce">
-            <span className="text-4xl">🦕</span>
-            <span className="text-2xl text-yellow-300 font-bold ml-2">Powered by Dino Energy!</span>
-            <span className="text-4xl ml-2">🦴</span>
+            <span className="text-4xl"></span>
+            <span className="text-2xl text-yellow-300 font-bold ml-2">Powered by Eppsidy</span>
+            <span className="text-4xl ml-2"></span>
           </div>
         </div>
       </div>
