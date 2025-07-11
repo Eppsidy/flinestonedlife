@@ -151,7 +151,7 @@ const TestimonialSlider: React.FC = () => {
         {/* Trust Badge */}
         <div className="text-center mt-12">
           <div className="inline-block bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-4 rounded-full shadow-xl border-4 border-yellow-400">
-            <span className="text-lg font-bold">🏆 A lot of Happy Cavemen! 🏆</span>
+            <span className="text-lg font-bold">A lot of Happy Cavemen! 🏆</span>
           </div>
         </div>
       </div>
